@@ -38,13 +38,13 @@ public class MortgageCalculator {
     }
 
     public static void main(String[] args){
-//        long loanAmount = Utilities.getLongValue(args[0]);
-//        int ternInYears = Utilities.getIntValue(args[1]);
-//        float annualRate = Utilities.getFloatValue(args[2]);
+        long loanAmount = Utilities.getLongValue(args[0]);
+        int ternInYears = Utilities.getIntValue(args[1]);
+        float annualRate = Utilities.getFloatValue(args[2]);
 
-        long loanAmount = Long.parseLong(args[0]);
-        int ternInYears = Integer.parseInt(args[1]);
-        float annualRate = Float.parseFloat(args[2]);
+//        long loanAmount = Long.parseLong(args[0]);
+//        int ternInYears = Integer.parseInt(args[1]);
+//        float annualRate = Float.parseFloat(args[2]);
         MortgageCalculator calculator=new MortgageCalculator(loanAmount,ternInYears,annualRate);
         calculator.calculateMonthlyPayment();
 
